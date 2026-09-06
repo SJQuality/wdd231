@@ -160,8 +160,9 @@ section img {
     background-color: var(--card-background);
     margin-right: 1px;
     margin-left: 1px;
-    font-size: .7em;
-    width: 55px;
+    font-size: 1.25em;
+    width: 100px;
+    height: 44px;
     cursor: pointer;
     box-shadow: 2px 2px 5px #999;
 }
