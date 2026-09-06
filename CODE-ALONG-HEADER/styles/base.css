@@ -1,0 +1,140 @@
+/* *********************Site Wide********************* */
+
+:root {
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --primary-color: #0B3C5D;
+    --secondary-color: #1B5E20;
+    --background: #F8F9FA;
+    --card-background: #E9ECEF;
+    --body-text: #212529;
+    --light-text: #FFFFFF;
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* *********************HEADER********************* */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* *********************HAMBURGER********************* */
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+
+    font-size: 2rem;
+}
+
+
+
+/* *********************NAV********************* */
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: small;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+/* *********************FOOTER********************* */
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.foot-icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.foot-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc dashed 1px;
+    border-radius: 22px;
+}
+
+.foot-icons img {
+    width: 22px;
+    height: 22px;
+
+}
+
+.foot-icons a:hover {
+    background-color: #ddd;
+}

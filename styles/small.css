@@ -1,0 +1,246 @@
+/* *********************Site Wide********************* */
+
+:root {
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --primary-color: #0B3C5D;
+    --secondary-color: #1B5E20;
+    --hover-color: #4F7C95;
+    --background: #F8F9FA;
+    --card-background: #E9ECEF;
+    --body-text: #212529;
+    --light-text: #FFFFFF;
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* *********************HEADER********************* */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 6px;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding-bottom: 5px;
+}
+
+/* *********************HAMBURGER********************* */
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+
+
+/* *********************NAV********************* */
+
+.navigation {
+    display: none;
+    grid-column: 1 / -1;
+    margin-right: 10px;
+}
+
+.navigation.show {
+    display: block;
+    background-color: var(--primary-color);
+
+}
+
+.navigation ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: small;
+    border-bottom: solid 1px #ddd;
+
+
+}
+
+.navigation li.current {
+    background-color: var(--secondary-color);
+}
+
+.navigation a:hover {
+    background-color: var(--hover-color);
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+/* *********************Main********************* */
+
+section {
+    display: block;
+    justify-self: center;
+    width: 90%;
+    background-color: var(--card-background);
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: var(--light-text);
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 10px;
+}
+
+section img {
+    display: block;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#WebCertSec {
+    background-color: white;
+}
+
+.courseButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 5px;
+
+}
+
+.courseButton {
+    border: 1px solid var(--secondary-color);
+    padding: 3px 20px 3px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--card-background);
+    margin-right: 1px;
+    margin-left: 1px;
+    font-size: .7em;
+    width: 55px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.courseButton:hover {
+    background-color: var(--hover-color);
+}
+
+.courseCont {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 5px;
+}
+
+.courseCont li {
+    text-decoration: none;
+    border: 1px solid var(--secondary-color);
+    margin: 2px;
+    list-style: none;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#completedCourse {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+
+
+}
+
+#completedCourse::before {
+    content: "✓";
+
+}
+
+#WebCertSec p {
+    text-align: center;
+}
+
+/* *********************FOOTER********************* */
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+
+}
+
+.foot-icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.foot-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc dashed 1px;
+    border-radius: 22px;
+}
+
+.foot-icons img {
+    width: 22px;
+    height: 22px;
+
+}
+
+.foot-icons a:hover {
+    background-color: #ddd;
+}
+
+
+#currentYear,
+.footerTxt,
+#lastModified,
+#lastMod {
+    color: var(--primary-color);
+}

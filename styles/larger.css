@@ -1,0 +1,56 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto 1fr;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        background-color: var(--primary-color);
+
+
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .navigation a {
+        border-right: solid 1px #ddd;
+        border-bottom: none;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    #sectionContainer {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #WebCertSec {
+        grid-column: span 2;
+
+    }
+
+    #courseCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}

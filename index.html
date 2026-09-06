@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Stephen Jones</title>
+    <meta name="author" content="Stephen Jones" />
+    <meta name="description" content="The webpage of Stephen Jones - 
+    Senior Software QA for the WDD 231 – Web Frontend Development I class at BYU-I" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer> </script>
+    <script src="scripts/date.js" defer> </script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/eagle.svg" alt="Eagle Logo" height="40" width="40">
+        <span id="name">Stephen Jones</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu Button"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home </a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div id="sectionContainer">
+            <section>
+                <h2>About Me</h2>
+                <p>I'm Stephen Jones, a Software QA leader and technology professional with more than a decade of
+                    experience
+                    helping teams build better software. My background spans quality assurance, technical leadership,
+                    data,
+                    and software delivery across industries including e-commerce, healthcare, IoT, and emerging
+                    technology.
+                    <br>
+                    <br>
+                    I'm currently expanding my frontend development skills through my studies at BYU-Idaho. Outside of
+                    technology, I enjoy spending time with my family, learning new things, and finding opportunities to
+                    build, create, and solve problems. I'm always interested in how technology can make people's lives
+                    and
+                    work a little better.
+                </p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/menow.webp" alt="Stephen Headshot">
+            </section>
+            <section id="WebCertSec">
+                <h2>Web Certificate Courses</h2>
+                <div class="courseButtons">
+                    <button a class="courseButton" id="all" href="">All</button>
+                    <button a class="courseButton" id="CSE" href="">CSE</button>
+                    <button class="courseButton" id="WDD">WDD</button>
+                </div>
+                <ul class="courseCont" id="courseCards">
+
+                </ul>
+                <p>The total credits for courses listed above is <span id="credits"></span></p>
+
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-icons">
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook link" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/stephen-jones-ctfl/"><img src="images/linkedin.svg" alt="LinkedIn link"
+                    width="16" height="16"></a>
+            <a href="https://github.com/SJQuality/"><img src="images/github.svg" alt="GitHub link" width="16"
+                    height="16"></a>
+        </div>
+        <p class="footerTxt">&copy;<span id="currentYear"></span> Stephen Jones | Georgia, USA</p>
+        <p id="lastMod">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
