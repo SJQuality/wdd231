@@ -1,0 +1,17 @@
+{
+    "family name": "Jones",
+    "move in": "05 Nov 2017",
+    "bishopric visit": true,
+    "family": [
+        {
+            "name": "Johny",
+            "gender": "Male",
+            "birthdate": "16 Oct 2004"
+        },
+        {
+            "name": "Sara",
+            "gender": "Female",
+            "birthdate": "08 Mar 2009"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+body {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(84, 84, 158);
+    box-shadow: 5px 5px 5px #b4b4b4;
+}
+
+#cards {
+    display: grid;
+    grid-gap: .25rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+
+}
+
+#cards section {
+    background-color: rgb(185, 186, 206);
+    width: 300px;
+    height: auto;
+    justify-items: center;
+    border: 1px solid black;
+}
+
+#cards h2 {
+    color: rgb(84, 84, 158);
+    margin: 5px;
+}
+
+#cards p {
+    margin: 5px;
+}
+
+#cards img {
+    max-width: 150px;
+    height: auto;
+    margin: 0px 0px 20px 75px;
+    box-shadow: 5px 5px 5px 5px #686868;
+
+}
