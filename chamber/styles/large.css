@@ -1,0 +1,132 @@
+@media only screen and (min-width: 900px) {
+
+    header,
+    main,
+    footer {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 100px auto 1fr;
+        background-color: var(--primary-color);
+    }
+
+    #head-name {
+        color: var(--light-text);
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        grid-column: auto;
+
+
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .navigation a {
+
+        border-bottom: none;
+    }
+
+    .current {
+        border-bottom: 1px solid var(--light-text);
+    }
+
+    .grid {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;
+        padding: 5px;
+    }
+
+    .grid section {
+        margin: 5px;
+        padding: 0px 2px 0px 2px;
+        width: 100%;
+    }
+
+
+    .grid .bottomCard {
+        gap: 1rem;
+        padding: 10px;
+
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+            margin: 0;
+            padding: 0.25rem;
+
+            &>* {
+                margin: 0 1rem;
+            }
+
+            img {
+                display: none;
+            }
+
+            .bottomCard {
+                grid-column: span 2;
+
+            }
+
+            .bottomCard div {
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .bottomCard div p {
+                padding: 5px;
+                width: 100%;
+                text-align: left;
+            }
+
+            .address {
+                display: block;
+            }
+
+            .email {
+                display: none;
+            }
+
+            &:nth-child(even) {
+                background-color: var(--alternate-row);
+                color: var(--body-text);
+            }
+        }
+    }
+
+    .footerContainer {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: none;
+    }
+
+    .foot-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .foot-icons a {
+        margin: 15px;
+    }
+}

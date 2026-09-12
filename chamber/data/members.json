@@ -1,0 +1,108 @@
+        {
+            "members": [
+                {
+                    "name": "North Georgia Outdoor Supply",
+                    "address": "2140 Market Place Blvd, Cumming, GA 30041",
+                    "phone": "(770) 555-0142",
+                    "email": "info@ngos.com",
+                    "website": "https://www.ngoutdoors.example.com",
+                    "image": "images/outdoor.webp",
+                    "membershipLevel": 3,
+                    "industry": "Outdoor Recreation",
+                    "tag": "Come outside with us!",
+                    "yearsInBusiness": 18,
+                    "employees": 32
+                },
+                {
+                    "name": "Cumming Family Dental",
+                    "address": "3185 Dahlonega Highway, Cumming, GA 30040",
+                    "phone": "(770) 555-0287",
+                    "email": "info@cfm.com",
+                    "website": "https://www.cummingfamilydental.example.com",
+                    "image": "images/dental.webp",
+                    "membershipLevel": 2,
+                    "industry": "Healthcare",
+                    "tag": "Pretty teeth in Forsyth",
+                    "yearsInBusiness": 11,
+                    "employees": 14
+                },
+                {
+                    "name": "Lanier Technology Solutions",
+                    "address": "425 Peachtree Parkway, Suite 210, Cumming, GA 30041",
+                    "phone": "(678) 555-0316",
+                    "email": "info@lts.com",
+                    "website": "https://www.laniertechnology.example.com",
+                    "image": "images/tech.webp",
+                    "membershipLevel": 3,
+                    "industry": "Information Technology",
+                    "tag": "Cumming Tech Pros",
+                    "yearsInBusiness": 9,
+                    "employees": 27
+                },
+                {
+                    "name": "Maple Street Coffee House",
+                    "address": "102 Maple Street, Cumming, GA 30040",
+                    "phone": "(470) 555-0194",
+                    "email": "info@msch.com",
+                    "website": "https://www.maplestreetcoffee.example.com",
+                    "image": "images/maple.webp",
+                    "membershipLevel": 1,
+                    "industry": "Food & Beverage",
+                    "tag": "Coffee by the lake",
+                    "yearsInBusiness": 4,
+                    "employees": 9
+                },
+                {
+                    "name": "Georgia Ridge Construction",
+                    "address": "1875 Buford Highway, Cumming, GA 30041",
+                    "phone": "(678) 555-0458",
+                    "email": "info@grc.com",
+                    "website": "https://www.georgiaridgeconstruction.example.com",
+                    "image": "images/ridge.webp",
+                    "membershipLevel": 2,
+                    "industry": "Construction",
+                    "tag": "Build Forsyth!",
+                    "yearsInBusiness": 22,
+                    "employees": 41
+                },
+                {
+                    "name": "Sawnee Creek Financial Group",
+                    "address": "560 Tri-County Plaza, Suite 115, Cumming, GA 30040",
+                    "phone": "(770) 555-0623",
+                    "email": "info@scfg.com",
+                    "website": "https://www.sawneecreekfinancial.example.com",
+                    "image": "images/creek.webp",
+                    "membershipLevel": 3,
+                    "industry": "Financial Services",
+                    "tag": "Smart money Cumming",
+                    "yearsInBusiness": 16,
+                    "employees": 18
+                },
+                {
+                    "name": "Cumming Creative Studio",
+                    "address": "740 Industrial Park Drive, Suite 300, Cumming, GA 30040",
+                    "phone": "(470) 555-0731",
+                    "email": "info@ccs.com",
+                    "website": "https://www.cummingcreativestudio.example.com",
+                    "image": "images/studio.webp",
+                    "membershipLevel": 1,
+                    "industry": "Marketing & Design",
+                    "tag": "Creating friends!",
+                    "yearsInBusiness": 6,
+                    "employees": 7
+                },
+                {
+                    "name": "Sawnee Veterinary Clinic",
+                    "address": "1295 Canton Highway, Cumming, GA 30040",
+                    "phone": "(678) 555-0865",
+                    "email": "info@svc.com",
+                    "website": "https://www.sawneeveterinary.example.com",
+                    "image": "images/vet.webp",
+                    "membershipLevel": 2,
+                    "industry": "Veterinary Services",
+                    "tag": "Best for your pets",
+                    "yearsInBusiness": 13,
+                    "employees": 21
+                }
+            ]
+        }
