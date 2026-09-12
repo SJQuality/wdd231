@@ -25,7 +25,6 @@
         justify-content: flex-end;
         grid-column: auto;
 
-
     }
 
     .navigation ul {
@@ -68,51 +67,49 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
+    }
 
-        section {
-            display: grid;
-            grid-template-columns: 1fr 2fr 2fr;
-            margin: 0;
-            padding: 0.25rem;
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
 
-            &>* {
-                margin: 0 1rem;
-            }
+    .list section>* {
+        margin: 0 1rem;
+    }
 
-            img {
-                display: none;
-            }
+    .list section img {
+        display: none;
+    }
 
-            .bottomCard {
-                grid-column: span 2;
+    .list section .bottomCard {
+        grid-column: span 2;
+    }
 
-            }
+    .list section .bottomCard div {
+        display: flex;
+        flex-direction: row;
+    }
 
-            .bottomCard div {
-                display: flex;
-                flex-direction: row;
+    .list section .bottomCard div p {
+        padding: 5px;
+        width: 100%;
+        text-align: left;
+    }
 
-            }
+    .list section .address {
+        display: block;
+    }
 
-            .bottomCard div p {
-                padding: 5px;
-                width: 100%;
-                text-align: left;
-            }
+    .list section .email {
+        display: none;
+    }
 
-            .address {
-                display: block;
-            }
-
-            .email {
-                display: none;
-            }
-
-            &:nth-child(even) {
-                background-color: var(--alternate-row);
-                color: var(--body-text);
-            }
-        }
+    .list section:nth-child(even) {
+        background-color: var(--alternate-row);
+        color: var(--body-text);
     }
 
     .footerContainer {

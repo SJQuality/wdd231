@@ -22,7 +22,7 @@ const displayCards = (members) => {
         businessTag.textContent = `${member.tag}`;
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `Logo for ${member.name}`);
-        logo.setAttribute('loading', 'laxy');
+        logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '100');
         logo.setAttribute('height', '100');
         nameDiv.setAttribute('class', 'memberName');
@@ -32,7 +32,7 @@ const displayCards = (members) => {
         phone.innerHTML = `<span class="bolded">PHONE: </span> ${member.phone}`;
         address.textContent = `${member.address}`
         address.setAttribute('class', 'address')
-        urlCont.innerHTML = `<span class="bolded">URL: </span> ${url}`;
+        urlCont.innerHTML = `<span class="bolded">URL: </span>`;
         url.setAttribute('href', member.website);
         url.textContent = member.website;
 
