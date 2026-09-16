@@ -16,7 +16,8 @@ const displayCards = (members) => {
         let urlCont = document.createElement('p');
         let url = document.createElement('a');
         let address = document.createElement('p');
-
+        let memLvl = document.createElement('p');
+        let logoMem = document.createElement('div');
 
         businessName.textContent = `${member.name}`;
         businessTag.textContent = `${member.tag}`;
@@ -25,6 +26,8 @@ const displayCards = (members) => {
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '100');
         logo.setAttribute('height', '100');
+
+        memLvl.innerHTML = `<span class="bolded">Membership Level: </span> ${member.membershipLevel}`;
         nameDiv.setAttribute('class', 'memberName');
         bottomCard.setAttribute('class', 'bottomCard');
         email.setAttribute('class', 'email');
@@ -44,7 +47,9 @@ const displayCards = (members) => {
         card.appendChild(bottomCard);
         infoCont.appendChild(address);
         bottomCard.appendChild(infoCont);
-        bottomCard.appendChild(logo);
+        bottomCard.appendChild(logoMem);
+        logoMem.appendChild(logo);
+        logoMem.appendChild(memLvl);
         infoCont.appendChild(email);
         infoCont.appendChild(phone);
         infoCont.appendChild(urlCont);
