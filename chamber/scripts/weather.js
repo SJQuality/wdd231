@@ -13,7 +13,6 @@ async function apiFetchCurrent() {
         const response = await fetch(currentUrl);
         if (response.ok) {
             const currentData = await response.json();
-            console.log(currentData);
             displayResults(currentData);
         } else {
             throw Error(await response.text());
@@ -55,8 +54,6 @@ async function apiFetchForcast() {
         if (response.ok) {
             const forcastData = await response.json();
             const lists = forcastData.list;
-            console.log(forcastData);
-
             forcastCards(lists);
         } else {
             throw Error(await response.text());
