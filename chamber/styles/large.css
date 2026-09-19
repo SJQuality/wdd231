@@ -42,6 +42,27 @@
         border-bottom: 1px solid var(--light-text);
     }
 
+    #home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #heroSection {
+        grid-column: span 2;
+    }
+
+    #hero h1 {
+        font-size: 4em;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    #hero a {
+        font-size: 1.5em;
+    }
+
     .grid {
         display: grid;
         grid-gap: 1rem;
@@ -102,6 +123,11 @@
     .list section .address {
         display: block;
     }
+
+    #spotlight {
+        grid-column: span 2;
+    }
+
 
     .list section .email {
         display: none;

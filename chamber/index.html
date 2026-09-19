@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce Directory</title>
     <meta name="author" content="Stephen Jones" />
-    <meta name="description" content="Directory page for Cumming, GA Chamber of Comerce. Come and meet with us!" />
+    <meta name="description" content="Home page for Cumming, GA Chamber of Comerce. Come and meet with us!" />
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/navigation.js" defer> </script>
     <script src="scripts/date.js" defer> </script>
-    <script src="scripts/directory.js" type="module"></script>
+    <script src="scripts/weather.js" defer> </script>
+    <script src="scripts/home.js" type="module"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -42,16 +43,54 @@
             </ul>
         </nav>
     </header>
-    <main id="directory">
-        <h1>Directory</h1>
-        <div id="grid-button-cont">
-            <button class="current" id="grid-button">Grid</button>
-            <button id="list-button">List</button>
-        </div>
-        <section class="grid" id="business-card-cont">
+    <main id="home">
+        <section id="heroSection">
+            <img src="images/cumming-hero.webp" alt="Lake Lanier at Sunset">
+            <div id="hero">
+                <h1>Cumming, GA</h1>
+                <h2>Where Business Thrives</h2>
+                <a href="">Join Us at the Chamber!</a>
+            </div>
+        </section>
+        <section id="currentEvents">
+            <h2>Current Events</h2>
+            <div class="event">
+                <h3>Cumming Fall Business Expo</h3>
+                <p class="date">October 10, 2026 | 9:00 AM – 2:00 PM</p>
+                <p class="location">Cumming Fairgrounds</p>
+                <p class="description">Connect with local businesses, entrepreneurs, and community organizations at this
+                    annual networking and business showcase.</p>
+
+            </div>
+            <div class="event">
+                <h3>Chamber Networking Breakfast</h3>
+                <p class="date">October 15, 2026 | 7:30 AM – 9:00 AM</p>
+                <p class="location">Cumming Chamber of Commerce</p>
+                <p class="description">Start your morning with coffee, conversation, and opportunities to connect with
+                    fellow Chamber members.</p>
+
+            </div>
 
         </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <div id="currentWeather">
+                <figure>
+                    <p id="today"></p>
+                    <img id="weather-icon" src="" alt="">
+                    <p id="current-temp"></p>
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div id="forcast">
+                <h3>Three Day Forcast</h3>
+                <div id="threeDay">
+                </div>
+            </div>
+        </section>
+        <section id="spotlight">
 
+        </section>
     </main>
     <footer>
         <div class="footerContainer">

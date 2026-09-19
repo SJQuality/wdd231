@@ -110,11 +110,134 @@ header span {
     background-color: var(--hover-color);
 }
 
-h1 {
+/* *********************Home/Index********************* */
+
+
+/* hero section */
+
+#home section {
+    padding: 15px;
+}
+
+#heroSection {
+    position: relative;
+    margin: .25rem;
+    grid-column: span 2;
+}
+
+#hero h1,
+#hero h2,
+#hero a {
+    color: var(--light-text);
+    color: var(--light-text);
+    padding-left: 10px;
+}
+
+
+#hero {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+    max-width: 450px;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+
+#heroSection img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Current Events */
+
+#currentEvents,
+#weather {
+    border-top: solid var(--secondary-color) 1px;
+
+}
+
+#currentEvents h2,
+#weather h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.event {
+    border: solid 1px var(--secondary-color);
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px #a1a1a1;
+    padding: 10px;
+    background-color: var(--card-background);
+
+}
+
+/* Weather */
+
+#currentWeather {
+    padding-bottom: 20px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: solid 1px var(--secondary-color);
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px #a1a1a1;
+    padding: 10px;
+    background-color: var(--card-background);
+}
+
+#today {
+    font-size: 2em;
+}
+
+figcaption,
+figure p {
+    text-transform: uppercase;
+    color: var(--body-text);
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+#weather-icon {
+    width: 4rem;
+}
+
+#forcast {
+    display: block;
+    justify-items: center;
+
+
+}
+
+#forcast h3 {
+    color: var(--primary-color);
+    margin-bottom: 0px;
+}
+
+#threeDay {
+    display: flex;
+    margin: 20px;
+}
+
+#threeDay figure {
+    margin: 10px;
+    width: 7rem;
+}
+
+
+/* *********************Directory********************* */
+
+#directory h1 {
     margin-left: 10px;
 }
 
-/* *********************Main********************* */
 
 /* ***Grid Buttons*** */
 #grid-button-cont {
@@ -143,7 +266,8 @@ h1 {
 }
 
 /* ***Grid Cards*** */
-.grid {
+.grid,
+#spotlight {
     display: grid;
     grid-gap: .5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -151,7 +275,8 @@ h1 {
     padding: 15px;
 }
 
-.grid section {
+.grid section,
+#spotlight section {
     border: solid 1px var(--secondary-color);
     border-radius: 10px;
     margin: 5px;
@@ -159,20 +284,24 @@ h1 {
     box-shadow: 5px 5px 5px 5px #a1a1a1;
 }
 
-.grid .memberName {
+.grid .memberName,
+#spotlight .memberName {
     border-bottom: solid 1px var(--secondary-color);
     grid-column: span 2;
     height: 90px;
 }
 
 .grid section div h2,
-.grid section div h3 {
+.grid section div h3,
+#spotlight section div h2,
+#spotlight section div h3 {
     display: block;
     text-align: center;
     margin: 10px;
 }
 
-.grid .bottomCard {
+.grid .bottomCard,
+#spotlight .bottomCard {
     display: flex;
     flex-direction: row-reverse;
     justify-self: left;
@@ -190,9 +319,13 @@ h1 {
     overflow-wrap: anywhere;
 }
 
-.grid section .address {
+.grid section .address,
+#spotlight section .address {
     display: none;
 }
+
+
+
 
 /* ***List*** */
 
@@ -248,6 +381,9 @@ h1 {
     background-color: var(--alternate-row);
     color: var(--body-text);
 }
+
+/* Spotlight Member Cards */
+
 
 /* *********************FOOTER********************* */
 
