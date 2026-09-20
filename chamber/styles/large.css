@@ -63,6 +63,7 @@
         font-size: 1.5em;
     }
 
+
     .grid {
         display: grid;
         grid-gap: 1rem;
@@ -126,8 +127,14 @@
 
     #spotlight {
         grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
+    #spotlight h2 {
+        grid-column: span 2;
+        text-align: center;
+    }
 
     .list section .email {
         display: none;

@@ -311,6 +311,10 @@ figure p {
 
 }
 
+#spotlight h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
 
 .bolded {
     font-weight: 800;
