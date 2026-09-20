@@ -129,7 +129,6 @@ header span {
 #hero h2,
 #hero a {
     color: var(--light-text);
-    color: var(--light-text);
     padding-left: 10px;
 }
 
@@ -161,7 +160,8 @@ header span {
 }
 
 #currentEvents h2,
-#weather h2 {
+#weather h2,
+#spotlight h2 {
     color: var(--primary-color);
     text-align: center;
 }
