@@ -154,7 +154,8 @@ header span {
 /* Current Events */
 
 #currentEvents,
-#weather {
+#weather,
+#spotlight {
     border-top: solid var(--secondary-color) 1px;
 
 }
