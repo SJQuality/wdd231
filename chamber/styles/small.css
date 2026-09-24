@@ -117,12 +117,14 @@ header span {
 
 #home section {
     padding: 15px;
+
 }
 
 #heroSection {
     position: relative;
     margin: .25rem;
     grid-column: span 2;
+
 }
 
 #hero h1,
@@ -130,6 +132,7 @@ header span {
 #hero a {
     color: var(--light-text);
     padding-left: 10px;
+    margin-top: 5px;
 }
 
 
@@ -140,6 +143,12 @@ header span {
     color: white;
     max-width: 450px;
     text-shadow: 2px 2px 5px black;
+    background-color: rgba(27, 94, 32, 0.8);
+    border: solid var(--body-text) 1px;
+    border-radius: 10px;
+    padding: 10px;
+
+
 }
 
 
@@ -214,7 +223,6 @@ figure p {
     display: block;
     justify-items: center;
 
-
 }
 
 #forcast h3 {
@@ -224,12 +232,14 @@ figure p {
 
 #threeDay {
     display: flex;
+    flex-direction: column;
     margin: 20px;
+
 }
 
 #threeDay figure {
     margin: 10px;
-    width: 7rem;
+    width: 80%;
 }
 
 

@@ -87,6 +87,7 @@ function displayCourses(courseList) {
     cards.innerHTML = "";
     courseList.forEach(course => {
 
+
         if (course.completed == true) {
             cards.innerHTML += `<li id="completedCourse">${course.subject} ${course.number}</li>`;
         }
@@ -94,6 +95,13 @@ function displayCourses(courseList) {
         else {
             cards.innerHTML += `<li>${course.subject} ${course.number}</li>`
         }
+
+
+        document.querySelector('#courseCards li').addEventListener("click", () => {
+            modal.showModal();
+            displayModal(course);
+        })
+
 
     });
 
@@ -107,10 +115,53 @@ function displayCourses(courseList) {
 
 
 
-//Click on filter
+//Course Modal
+const modal = document.querySelector("#course-details");
+const displayModal = (course) => {
+
+    let subject = document.createElement('h2');
+    let subjectCont = document.createElement('div');
+    let closeButton = document.createElement('button');
+    let title = document.createElement('h3');
+    let credits = document.createElement('p');
+    let certificate = document.createElement('p');
+    let description = document.createElement('p');
+    let technology = document.createElement('p');
+
+    subject.textContent = course.subject;
+    closeButton.setAttribute('id', 'modal-close');
+    title.textContent = course.title;
+    credits.textContent = `${course.credits} credits`;
+    certificate.textContent = `Certificate: ${course.certificate}`;
+    description.textContent = course.description;
+    technology.textContent = `Technology: ${course.technology}`;
+
+    modal.appendChild(subjectCont);
+    subjectCont.appendChild(subject);
+    subjectCont.appendChild(closeButton);
+    modal.appendChild(title);
+    modal.appendChild(credits);
+    modal.appendChild(certificate);
+    modal.appendChild(description);
+    modal.appendChild(technology);
+}
+
+
+
+
+
 //Initial Display
 displayCourses(courses);
 
+//Modal info
+
+
+
+document.querySelector('#modal-close').addEventListener("click", () => {
+    modal.close();
+})
+
+//Click on filter
 //Filter
 document.querySelector('#all').addEventListener("click", () => {
     displayCourses(courses);
