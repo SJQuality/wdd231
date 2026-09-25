@@ -1,5 +1,4 @@
 
-
 const courses = [
     {
         subject: 'CSE',
@@ -79,45 +78,52 @@ const courses = [
         completed: false
     }
 ]
+const modal = document.querySelector("#course-details");
+//Initial Display
+displayCourses(courses);
 
 //build course content
 function displayCourses(courseList) {
     const cards = document.querySelector('#courseCards');
-
+    let cardCounter = 0;
     cards.innerHTML = "";
+
     courseList.forEach(course => {
 
-
         if (course.completed == true) {
-            cards.innerHTML += `<li id="completedCourse">${course.subject} ${course.number}</li>`;
+            let card = document.createElement('li');
+            card.innerHTML = `<li class="courseCard${cardCounter}" id="completedCourse">${course.subject} ${course.number}</li>`;
+            cards.appendChild(card);
         }
 
         else {
-            cards.innerHTML += `<li>${course.subject} ${course.number}</li>`
+            let card = document.createElement('li');
+            card.innerHTML = `<li class="courseCard${cardCounter}">${course.subject} ${course.number}</li>`;
+            cards.appendChild(card);
+
         }
+        let courseCard = document.querySelector(`.courseCard${cardCounter}`);
 
+        //Add Listener
+        courseCard.addEventListener("click", () => {
+            modal.showModal()
+            courseModal(course);
+        });
 
-        document.querySelector('#courseCards li').addEventListener("click", () => {
-            modal.showModal();
-            displayModal(course);
-        })
-
-
+        cardCounter += 1;
     });
-
 
     //calulate Credits
     const totalCredits = courseList.reduce((total, course) => total + course.credits, 0);
-
     //Display credits
     document.querySelector('#credits').textContent = `${totalCredits}`;
+
 }
 
 
-
 //Course Modal
-const modal = document.querySelector("#course-details");
-const displayModal = (course) => {
+
+const courseModal = (course) => {
 
     let subject = document.createElement('h2');
     let subjectCont = document.createElement('div');
@@ -128,8 +134,9 @@ const displayModal = (course) => {
     let description = document.createElement('p');
     let technology = document.createElement('p');
 
-    subject.textContent = course.subject;
+    subject.textContent = `${course.subject} ${course.number}`;
     closeButton.setAttribute('id', 'modal-close');
+    closeButton.textContent = `❌`;
     title.textContent = course.title;
     credits.textContent = `${course.credits} credits`;
     certificate.textContent = `Certificate: ${course.certificate}`;
@@ -144,22 +151,15 @@ const displayModal = (course) => {
     modal.appendChild(certificate);
     modal.appendChild(description);
     modal.appendChild(technology);
+
+
+    closeButton.addEventListener("click", () => {
+        modal.close();
+        modal.innerHTML = "";
+    })
+
 }
 
-
-
-
-
-//Initial Display
-displayCourses(courses);
-
-//Modal info
-
-
-
-document.querySelector('#modal-close').addEventListener("click", () => {
-    modal.close();
-})
 
 //Click on filter
 //Filter

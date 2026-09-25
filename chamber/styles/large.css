@@ -1,5 +1,6 @@
 @media only screen and (min-width: 900px) {
 
+    /* *********MAIN/NAV********* */
     header,
     main,
     footer {
@@ -42,6 +43,7 @@
         border-bottom: 1px solid var(--light-text);
     }
 
+    /* *********HOME********* */
     #home {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -125,6 +127,7 @@
         display: block;
     }
 
+    /* ***Spotlight*** */
     #spotlight {
         grid-column: span 2;
         display: grid;
@@ -145,14 +148,46 @@
         color: var(--body-text);
     }
 
+    /* ***Weather*** */
     #threeDay {
 
         flex-direction: row;
 
-
     }
 
+    /* *********JOIN********* */
+    #join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+    }
 
+    #join h1,
+    #join h2 {
+        grid-column: span 2;
+        text-align: left;
+    }
+
+    /* ***Card Animation*** */
+
+    .memCard.animate {
+        animation: cardRight 1s ease-out forwards;
+        animation-delay: 0s;
+    }
+
+    @keyframes cardRight {
+        from {
+            opacity: 0;
+            transform: translateX(150px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* *********FOOTER********* */
 
     .footerContainer {
         display: grid;

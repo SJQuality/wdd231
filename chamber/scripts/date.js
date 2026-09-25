@@ -8,3 +8,4 @@ currentYear.innerHTML = today.getFullYear();
 //Last Modified
 const lastModified = document.querySelector("#lastModified");
 document.getElementById("lastModified").innerHTML = document.lastModified;
+

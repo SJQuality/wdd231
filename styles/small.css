@@ -221,12 +221,26 @@ dialog {
     background-color: rgb(0 0 0 / 50%);
 }
 
-dialog div button {
+dialog div {
+    display: grid;
+    grid-template-columns: auto 50px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+dialog div h2 {
+    background-color: var(--secondary-color);
+    margin: 0px;
+    text-align: center;
+}
+
+dialog button {
     position: absolute;
     top: 23px;
     right: 23px;
     padding: .5rem 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
+
 }
 
 /* *********************FOOTER********************* */
