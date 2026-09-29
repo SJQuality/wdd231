@@ -5,7 +5,7 @@
     --warm-sand: #D8C3A5;
     --trail-cream: #F5F1E8;
     --charcoal: #263238;
-    --white: #ffff;
+    --white: #FFFFFF;
     --heading-font: "Montserrat", sans-serif;
     --body-font: "Roboto", sans-serif;
 }
@@ -83,7 +83,7 @@ li {
 }
 
 .color-card {
-    border: 1px solid #ccc;
+    border: 1px solid var(--warm-sand);
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
@@ -93,6 +93,7 @@ li {
 
 .color-sample {
     height: 60px;
+    border-bottom: 1px solid var(--warm-sand);
 }
 
 .color-card h3,
@@ -118,12 +119,10 @@ li {
 
 .cream .color-sample {
     background-color: var(--trail-cream);
-    border-bottom: 1px solid #ccc;
 }
 
 .charcoal .color-sample {
     background-color: var(--charcoal);
-    border-bottom: 1px solid #ccc;
 }
 
 /* Typography */
