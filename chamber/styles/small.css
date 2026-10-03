@@ -103,7 +103,6 @@ header span {
     font-size: small;
     border-bottom: solid 1px #ddd;
 
-
 }
 
 .navigation li.current {
@@ -144,7 +143,6 @@ header span {
     position: absolute;
     top: 10%;
     left: 5%;
-    color: white;
     max-width: 450px;
     text-shadow: 2px 2px 5px black;
     background-color: rgba(27, 94, 32, 0.8);
@@ -195,16 +193,18 @@ header span {
     padding-bottom: 20px;
 }
 
-figure {
+#threeDay figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    order: solid 1px var(--secondary-color);
+    border: solid 1px var(--secondary-color);
     border-radius: 10px;
     margin: 20px;
     box-shadow: 5px 5px 5px 5px #a1a1a1;
     padding: 10px;
     background-color: var(--card-background);
+    margin: 10px;
+    width: 80%;
 }
 
 #today {
@@ -220,7 +220,10 @@ figure p {
 }
 
 #weather-icon {
+    display: block;
+    justify-self: center;
     width: 4rem;
+
 }
 
 #forcast {
@@ -238,21 +241,19 @@ figure p {
     display: flex;
     flex-direction: column;
     margin: 20px;
-
 }
 
-#threeDay figure {
-    margin: 10px;
-    width: 80%;
-}
+
 
 
 /* *********************Directory********************* */
 
 #directory h1,
-#join h1 {
+#join h1,
+#discover h1 {
     margin-left: 10px;
     color: var(--body-text);
+    text-align: center;
 }
 
 
@@ -264,7 +265,8 @@ figure p {
     margin-bottom: 1rem;
 }
 
-#grid-button-cont button {
+#grid-button-cont button,
+#cardContainer section button {
     width: 10rem;
     height: 2rem;
     border-radius: 10px;
@@ -273,11 +275,13 @@ figure p {
     cursor: pointer;
 }
 
-#grid-button-cont button:hover {
+#grid-button-cont button:hover,
+#cardContainer section button:hover {
     background-color: var(--hover-color);
 }
 
-#grid-button-cont button.current {
+#grid-button-cont button.current,
+#cardContainer section button {
     background-color: var(--primary-color);
     color: var(--light-text);
 }
@@ -294,7 +298,9 @@ figure p {
 }
 
 .grid section,
-#spotlight section {
+#spotlight section,
+#cardContainer section,
+.lastVisited {
     border: solid 1px var(--secondary-color);
     border-radius: 10px;
     margin: 5px;
@@ -493,13 +499,34 @@ fieldset textarea {
 
 }
 
+.num0,
+.num1,
+.num2,
+.num3 {
+    border-radius: 10px;
+}
+
 .num0 {
     border: 5px solid var(--np-color);
-    border-radius: 10px;
     animation-delay: 0s;
 }
 
-button.num0 {
+.num1 {
+    border: 5px solid var(--bronze-color);
+    animation-delay: 0.3s;
+}
+
+.num2 {
+    border: 5px solid var(--silver-color);
+    animation-delay: 0.6s;
+}
+
+.num3 {
+    border: 5px solid var(--gold-color);
+    animation-delay: 0.9s;
+}
+
+.memCard button {
     cursor: pointer;
 }
 
@@ -508,29 +535,9 @@ button.num0 {
 
 }
 
-.num1 {
-    border: 5px solid var(--bronze-color);
-    border-radius: 10px;
-    animation-delay: 0.3s;
-}
-
-button.num1 {
-    cursor: pointer;
-}
-
 .num2 div {
     background-color: var(--silver-color);
 
-}
-
-.num2 {
-    border: 5px solid var(--silver-color);
-    border-radius: 10px;
-    animation-delay: 0.6s;
-}
-
-button.num2 {
-    cursor: pointer;
 }
 
 .num3 div {
@@ -538,15 +545,6 @@ button.num2 {
 
 }
 
-.num3 {
-    border: 5px solid var(--gold-color);
-    border-radius: 10px;
-    animation-delay: 0.9s;
-}
-
-button.num3 {
-    cursor: pointer;
-}
 
 /* Card Annimation */
 .memCard.animate {
@@ -651,6 +649,53 @@ dialog.memLvl3 {
 
 }
 
+/* *********************Discover********************* */
+#cardContainer {
+    padding: 10px;
+
+}
+
+#cardContainer section {
+    display: grid;
+    grid-template-areas:
+        "name"
+        "img"
+        "description"
+        "address"
+        "button"
+    ;
+    padding: 20px;
+    margin: 0px 20px 20px 0px;
+    justify-items: center;
+}
+
+#cardContainer section h2 {
+    grid-area: name;
+}
+
+#cardContainer figure {
+    grid-area: img;
+    margin: 10px;
+}
+
+
+
+#cardContainer p {
+    grid-area: description;
+
+}
+
+#cardContainer address {
+    grid-area: address;
+
+}
+
+#cardContainer button {
+    grid-area: button;
+
+    margin-top: 10px;
+}
+
 /* *********************FOOTER********************* */
 
 footer {
@@ -662,9 +707,16 @@ footer {
 
 .footerContainer {
     display: grid;
-    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
 }
 
+.lastVisited {
+    height: 3rem;
+    color: var(--light-text);
+    background-color: var(--secondary-color);
+    padding-top: 13px;
+
+}
 
 .info {
     text-align: left;
@@ -672,7 +724,6 @@ footer {
 }
 
 .footer-title {
-
     font-weight: 600;
 }
 

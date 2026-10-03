@@ -1,4 +1,4 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1025px) {
 
     /* *********MAIN/NAV********* */
     header,
@@ -44,6 +44,7 @@
     }
 
     /* *********HOME********* */
+
     #home {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -187,12 +188,33 @@
         }
     }
 
+    /* *********************Discover********************* */
+
+
+    #cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #cardContainer section {
+        grid-template-areas:
+            "name name"
+            "img address"
+            "img description"
+            "button button"
+        ;
+    }
+
     /* *********FOOTER********* */
 
     .footerContainer {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: none;
+    }
+
+    .lastVisited {
+        grid-column: span 3;
     }
 
     .foot-icons {
