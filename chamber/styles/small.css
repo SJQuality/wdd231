@@ -26,12 +26,7 @@
 /* *********************HEADER********************* */
 
 header {
-    display: grid;
-    grid-template-columns: 44px auto 44px;
-    align-items: end;
-    padding: 5px 0 5px 10px;
-    border-bottom: solid 1px #ddd;
-    column-gap: 8px;
+
     background-color: var(--primary-color);
 }
 
@@ -52,6 +47,15 @@ header span {
 }
 
 /* *********************HAMBURGER********************* */
+
+.nav {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
 
 .hamburger {
     background: none;
@@ -203,7 +207,6 @@ header span {
     box-shadow: 5px 5px 5px 5px #a1a1a1;
     padding: 10px;
     background-color: var(--card-background);
-    margin: 10px;
     width: 80%;
 }
 
