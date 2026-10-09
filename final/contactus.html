@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>North Georgia Outdoor Adventure Guide - Contact Us Page</title>
+
+    <meta name="author" content="Stephen Jones">
+    <meta name="description" content="Contact Us page for the North Georgia Outdoor Adventure Guide website.">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/navigation.js" defer> </script>
+    <script src="scripts/date.js" defer> </script>
+    <script src="scripts/contactus.js" defer> </script>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Contact Us page for the North Georgia Outdoor Adventure Guide website">
+    <meta property="og:description"
+        content="Contact Us page for the North Georgia Outdoor Adventure Guide website. Come outside with us!">
+    <meta property="og:image" content="https://sjquality.github.io/wdd231/final/images/ngoag.webp">
+    <meta property="og:url" content="https://sjquality.github.io/wdd231/final/contactus.html">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav"></nav>
+    </header>
+
+    <main id="contact">
+        <h1>Contact Us</h1>
+        <h2>Let us get to know you!</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+
+                <label for="fName" class="fName">* First Name<input type="text" id="fName" name="fName"
+                        title="First Name" autocomplete="given-name" required></label>
+                <label for="lName" class="lName">* Last Name<input type="text" id="lName" name="lName" title="Last Name"
+                        autocomplete="family-name" required></label>
+                <label for="email" class="email">* Email<input type="email" id="email" name="email"
+                        placeholder="email@example.com" title="Email" autocomplete="email" required></label>
+                <label for="mobile" class="mobile">* Mobile<input type="tel" name="mobile" id="mobile"
+                        title="Phone Number" autocomplete="tel" required></label>
+
+                <label for="comments" class="comments">Comments<textarea name="comments" id="comments"
+                        title="Organization Comments"></textarea></label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+            </fieldset>
+            <label for="submitBtn"><input type="submit" value="Contact Us!" id="submitBtn"></label>
+        </form>
+        <h2>Hiking Difficulty Levels</h2>
+        <p>Note: Actual difficulty can change with weather, trail conditions, and the route chosen.</p>
+        <section id="diffInfo"></section>
+
+        <dialog class="diffLvl0"></dialog>
+        <dialog class="diffLvl1"></dialog>
+        <dialog class="diffLvl2"></dialog>
+        <dialog class="diffLvl3"></dialog>
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <p class="lastVisited"></p>
+            <section class="info">
+                <p class="footer-title">North Georgia Outdoor Adventure Guide</p>
+                <p>4737 Cumming Rd</p>
+                <p>Cumming, GA 30040</p>
+                <p>info@ngoag.org</p>
+                <p>(770)-555-5852</p>
+            </section>
+            <section class="foot-icons">
+                <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook link" width="16"
+                        height="16"></a>
+                <a href="https://www.linkedin.com/in/stephen-jones-ctfl/"><img src="images/linkedin.svg"
+                        alt="LinkedIn link" width="16" height="16"></a>
+                <a href="https://github.com/SJQuality/"><img src="images/github.svg" alt="GitHub link" width="16"
+                        height="16"></a>
+            </section>
+            <section class="info">
+                <p>WDD231 Class Final</p>
+                <p>Stephen Jones</p>
+                <p class="footerTxt">&copy;<span id="currentYear"></span> North Georgia Outdoor Adventure Guide</p>
+                <p id="lastMod">Last Modified: <span id="lastModified"></span></p>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>

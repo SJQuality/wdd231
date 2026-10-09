@@ -1,0 +1,547 @@
+:root {
+    --forest-green: #1F4D36;
+    --mountain-blue: #2B5870;
+    --river-teal: #205752;
+    --warm-sand: #D8C3A5;
+    --trail-cream: #F5F1E8;
+    --charcoal: #263238;
+    --white: #FFFFFF;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    line-height: 1.6;
+    background-color: var(--warm-sand);
+}
+
+header {
+    background-color: var(--forest-green);
+    color: var(--trail-cream);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 115px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    column-gap: 8px;
+}
+
+.nav img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+#head-name {
+    font-size: 1.5rem;
+    align-self: center;
+    color: var(--trail-cream);
+    padding-bottom: 5px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* *********************HAMBURGER********************* */
+
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--warm-sand);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/* *********************NAV********************* */
+
+.navigation {
+    display: none;
+    grid-column: 1 / -1;
+    margin-right: 10px;
+}
+
+.navigation.show {
+    display: block;
+    background-color: var(--mountain-blue);
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-bottom: 0;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--trail-cream);
+    text-decoration: none;
+    font-size: small;
+
+}
+
+.navigation li.current {
+    background-color: var(--river-teal);
+
+}
+
+.navigation li.current a {
+    color: var(--white);
+}
+
+.navigation a:hover {
+    background-color: var(--warm-sand);
+    color: var(--charcoal);
+}
+
+/* *********************Home/Index********************* */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* hero section */
+
+#home section {
+    padding: 15px;
+
+}
+
+#heroSection {
+    position: relative;
+    margin: .2rem;
+}
+
+#hero h1,
+#hero p {
+    color: var(--trail-cream);
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+
+#hero {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    max-width: 100%;
+    height: auto;
+    text-shadow: 2px 2px 5px black;
+    background-color: rgba(31, 77, 54, 0.8);
+    border: solid var(--forest-green) 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+
+}
+
+#heroSection img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: var(--charcoal);
+}
+
+/* *********************Activities********************* */
+h1 {
+    text-align: center;
+    color: var(--charcoal);
+}
+
+#activityCards,
+#activities {
+    padding: 5px;
+    margin: 5px;
+
+}
+
+#activityCards section,
+#activities section {
+    display: grid;
+    grid-template-areas:
+        "name"
+        "location"
+        "img"
+        "type"
+        "difficulty"
+        "distance"
+        "description"
+    ;
+    justify-items: center;
+    border: solid 1px var(--warm-sand);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(90% - 10px);
+    box-shadow: 5px 5px 5px 5px #a1a1a1;
+    background-color: var(--trail-cream);
+}
+
+.bolded {
+    font-weight: 600;
+}
+
+#activityCards section .activityName,
+#activities section .activityName {
+    grid-area: name;
+}
+
+#activityCards section .activityLocation,
+#activities section .activityLocation {
+    grid-area: location;
+}
+
+#activityCards section .activityImg,
+#activities section .activityImg {
+    grid-area: img;
+    max-width: 100%;
+    height: auto;
+}
+
+#activityCards section .activityType,
+#activities section .activityType {
+    grid-area: type;
+}
+
+#activityCards section .activityDifficulty,
+#activities section .activityDifficulty {
+    grid-area: difficulty;
+}
+
+#activityCards section .activityDistance,
+#activities section .activityDistance {
+    grid-area: distance;
+}
+
+#activityCards section .activityDescription,
+#activities section .activityDescription {
+    grid-area: description;
+}
+
+#activityCards section p,
+#activities section p {
+    margin: 5px;
+}
+
+/* *********************JOIN********************* */
+
+/* Form */
+main h2 {
+    margin-left: 20px;
+    color: var(--charcoal);
+    text-align: center;
+}
+
+fieldset,
+#diffInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    border: 1px solid var(--forest-green);
+    border-radius: 10px;
+    background-color: var(--trail-cream);
+}
+
+fieldset label {
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+}
+
+fieldset input,
+fieldset textarea {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-left: 10px solid var(--mountain-blue);
+    height: 2.5em;
+
+}
+
+#levels {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+#submitBtn {
+    display: block;
+    justify-self: center;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Difficulty Level Cards */
+
+
+.diffCard {
+    border: 1px solid var(--mountain-blue);
+    margin: 2em;
+    text-align: center;
+    padding-bottom: 1em;
+    box-shadow: 5px 5px 5px 5px #a1a1a1;
+    background-color: var(--trail-cream);
+}
+
+.diffCard div {
+    display: block;
+    height: 2em;
+    padding: 0px;
+}
+
+.num0 div {
+    background-color: var(--mountain-blue);
+
+}
+
+.num0,
+.num1,
+.num2,
+.num3 {
+    border-radius: 10px;
+}
+
+.num0 {
+    border: 5px solid var(--mountain-blue);
+    animation-delay: 0s;
+}
+
+.num1 {
+    border: 5px solid var(--river-teal);
+    animation-delay: 0.3s;
+}
+
+.num2 {
+    border: 5px solid var(--forest-green);
+    animation-delay: 0.6s;
+}
+
+.num3 {
+    border: 5px solid var(--warm-sand);
+    animation-delay: 0.9s;
+}
+
+.diffCard button {
+    cursor: pointer;
+}
+
+.num1 div {
+    background-color: var(--river-teal);
+
+}
+
+.num2 div {
+    background-color: var(--forest-green);
+
+}
+
+.num3 div {
+    background-color: var(--warm-sand);
+
+}
+
+/* Difficulty Modals */
+
+dialog {
+    width: 400px;
+    max-height: 450px;
+    border: 6px solid var(--forest-green);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
+
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog div {
+    display: grid;
+    grid-template-columns: auto 50px;
+    padding: 10px;
+}
+
+dialog h2 {
+    color: var(--charcoal);
+    margin: 0px;
+    text-align: center;
+}
+
+
+dialog button {
+    display: block;
+    justify-self: center;
+    margin: .5em;
+    width: 10em;
+    height: 45px;
+    cursor: pointer;
+}
+
+dialog.diffLvl0 button,
+dialog.diffLvl0 {
+    border: solid var(--mountain-blue) 10px;
+    border-radius: 5px;
+}
+
+dialog.diffLvl1 button,
+dialog.diffLvl1 {
+    border: solid var(--river-teal) 10px;
+    border-radius: 5px;
+}
+
+dialog.diffLvl2 button,
+dialog.diffLvl2 {
+    border: solid var(--forest-green) 10px;
+    border-radius: 5px;
+}
+
+dialog.diffLvl3 button,
+dialog.diffLvl3 {
+    border: solid var(--warm-sand) 10px;
+    border-radius: 5px;
+}
+
+
+/* *********************THANK YOU!********************* */
+
+#ty h1 {
+    text-align: center;
+}
+
+#thankYou {
+    display: block;
+    border: 5px solid var(--forest-green);
+    border-radius: 10px;
+    background-color: var(--trail-cream);
+    color: var(--charcoal);
+    margin: 2em;
+    padding: 1em;
+
+}
+
+/* *********************FOOTER********************* */
+
+footer {
+    background-color: var(--forest-green);
+    padding: 1rem 10px;
+    text-align: center;
+
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+}
+
+.lastVisited {
+    height: 3rem;
+    color: var(--trail-cream);
+    background-color: var(--forest-green);
+    padding-top: 13px;
+
+}
+
+.info {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.footer-title {
+    font-weight: 600;
+}
+
+.info p {
+    color: var(--trail-cream);
+    margin: .2rem;
+}
+
+.foot-icons {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+.foot-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+
+.foot-icons img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.foot-icons a:hover {
+    background-color: var(--river-teal);
+}
+
+
+#currentYear,
+.footerTxt,
+#lastModified,
+#lastMod {
+    color: var(--trail-cream);
+}

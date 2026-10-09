@@ -1,0 +1,124 @@
+@media only screen and (min-width: 900px) {
+
+    /* *********MAIN/NAV********* */
+    header,
+    main,
+    footer {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        background-color: var(--forest-green);
+    }
+
+    header img {
+        width: 100%;
+    }
+
+
+    #head-name {
+
+        font-size: 3em;
+
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        grid-column: span 2;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+
+    #nav-border {
+        border-left: 1px solid var(--trail-cream);
+        border-right: 1px solid var(--trail-cream);
+
+    }
+
+    .navigation li {
+        border-bottom: none;
+        padding: 0 50px 0 50px;
+    }
+
+    .navigation a {
+        border-bottom: none;
+        padding: 1rem;
+        font-size: large;
+    }
+
+    /* *********************Activities/ Home Cards********************* */
+
+    #activityCards,
+    #activities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #activityCards section,
+    #activities section {
+
+        grid-template-areas:
+            "name name"
+            "location location"
+            "img type"
+            "img difficulty"
+            "img distance"
+            "description description"
+        ;
+        grid-template-columns: 40% minmax(0, 1fr);
+
+    }
+
+    #activityCards section .activityImg,
+    #activities section .activityImg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #activityCards section p,
+    #activities section p {
+        font-size: larger;
+    }
+
+    /* *********************Difficulty Cards********************* */
+
+    #diffInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* *********FOOTER********* */
+
+    .footerContainer {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: none;
+    }
+
+    .lastVisited {
+        grid-column: span 3;
+    }
+
+    .foot-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .foot-icons a {
+        margin: 15px;
+    }
+
+}

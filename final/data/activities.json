@@ -1,0 +1,139 @@
+{
+    "activities": [
+        {
+            "name": "Sawnee Mountain Preserve",
+            "location": "Cumming, GA",
+            "type": "Hiking",
+            "difficulty": "Moderate",
+            "distance": "4.8 miles",
+            "description": "A scenic preserve featuring wooded trails, mountain views, and the popular Indian Seats overlook.",
+            "image": "images/sawnee-mountain-preserve.webp"
+        },
+        {
+            "name": "Amicalola Falls State Park",
+            "location": "Dawsonville, GA",
+            "type": "Hiking",
+            "difficulty": "Moderate",
+            "distance": "2.1 miles",
+            "description": "Home to one of Georgia's tallest waterfalls with trails ranging from easy walks to challenging climbs.",
+            "image": "images/amicalola-falls-state-park.webp"
+        },
+        {
+            "name": "Anna Ruby Falls",
+            "location": "Helen, GA",
+            "type": "Waterfall",
+            "difficulty": "Easy",
+            "distance": "0.9 miles",
+            "description": "A short paved trail leads to a viewing area overlooking the dramatic twin waterfalls.",
+            "image": "images/anna-ruby-falls.webp"
+        },
+        {
+            "name": "Tallulah Gorge State Park",
+            "location": "Tallulah Falls, GA",
+            "type": "Hiking",
+            "difficulty": "Hard",
+            "distance": "3.0 miles",
+            "description": "A spectacular gorge featuring overlooks, waterfalls, and challenging trails descending into the canyon.",
+            "image": "images/tallulah-gorge-state-park.webp"
+        },
+        {
+            "name": "Fort Mountain State Park",
+            "location": "Chatsworth, GA",
+            "type": "Hiking",
+            "difficulty": "Moderate",
+            "distance": "5.0 miles",
+            "description": "Mountain trails wind through forests and past an ancient stone wall with views of the surrounding mountains.",
+            "image": "images/fort-mountain-state-park.webp"
+        },
+        {
+            "name": "Dahlonega Gold Museum",
+            "location": "Dahlonega, GA",
+            "type": "History",
+            "difficulty": "Easy",
+            "distance": "0.5 miles",
+            "description": "A historic destination offering visitors an introduction to Georgia's gold mining history.",
+            "image": "images/dahlonega.webp"
+        },
+        {
+            "name": "Lake Lanier",
+            "location": "Buford, GA",
+            "type": "Water Recreation",
+            "difficulty": "Easy",
+            "distance": "Varies",
+            "description": "A large reservoir offering boating, fishing, swimming, kayaking, and other outdoor recreation.",
+            "image": "images/lake-lanier.webp"
+        },
+        {
+            "name": "Chattahoochee River",
+            "location": "Roswell, GA",
+            "type": "River Recreation",
+            "difficulty": "Easy",
+            "distance": "Varies",
+            "description": "A popular outdoor destination for fishing, tubing, kayaking, hiking, and wildlife viewing.",
+            "image": "images/chattahoochee-river.webp"
+        },
+        {
+            "name": "Raven Cliff Falls",
+            "location": "Helen, GA",
+            "type": "Waterfall",
+            "difficulty": "Moderate",
+            "distance": "5.0 miles",
+            "description": "A forested trail follows Dodd Creek through the mountains to a scenic waterfall surrounded by rock cliffs.",
+            "image": "images/raven-cliff-falls.webp"
+        },
+        {
+            "name": "Blood Mountain",
+            "location": "Blairsville, GA",
+            "type": "Hiking",
+            "difficulty": "Hard",
+            "distance": "4.3 miles",
+            "description": "A challenging Appalachian Trail hike leading to one of the highest peaks in Georgia.",
+            "image": "images/blood-mountain.webp"
+        },
+        {
+            "name": "Vogel State Park",
+            "location": "Blairsville, GA",
+            "type": "Camping",
+            "difficulty": "Easy",
+            "distance": "Varies",
+            "description": "A mountain lake destination offering camping, hiking trails, fishing, swimming, and boating.",
+            "image": "images/vogel-state-park.webp"
+        },
+        {
+            "name": "Cloudland Canyon State Park",
+            "location": "Rising Fawn, GA",
+            "type": "Hiking",
+            "difficulty": "Moderate",
+            "distance": "5.0 miles",
+            "description": "A scenic canyon park featuring waterfalls, overlooks, forests, and a variety of hiking trails.",
+            "image": "images/cloudland-canyon-state-park.webp"
+        },
+        {
+            "name": "Helen Tubing",
+            "location": "Helen, GA",
+            "type": "Tubing",
+            "difficulty": "Easy",
+            "distance": "2.0 miles",
+            "description": "A relaxing outdoor activity that lets visitors float down the Chattahoochee River near Helen.",
+            "image": "images/helen-tubing.webp"
+        },
+        {
+            "name": "Georgia State Parks Trail",
+            "location": "North Georgia",
+            "type": "Hiking",
+            "difficulty": "Varies",
+            "distance": "Varies",
+            "description": "A collection of hiking opportunities throughout North Georgia ranging from short walks to challenging mountain trails.",
+            "image": "images/georgia-state-parks-trail.webp"
+        },
+        {
+            "name": "Smithgall Woods State Park",
+            "location": "Helen, GA",
+            "type": "Nature",
+            "difficulty": "Moderate",
+            "distance": "Varies",
+            "description": "A protected mountain wilderness featuring forest trails, streams, wildlife, and opportunities for outdoor exploration.",
+            "image": "images/smithgall-woods-state-park.webp"
+        }
+    ]
+}

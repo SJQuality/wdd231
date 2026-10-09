@@ -28,6 +28,23 @@ header {
     padding: 2rem 1rem;
 }
 
+header img {
+    display: block;
+    width: 5.5rem;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+#head-name {
+    font-size: 1.5rem;
+    align-self: center;
+    color: var(--trail-cream);
+    padding-bottom: 5px;
+    margin-left: 15px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
 header h1 {
     margin: 0;
     font-family: var(--heading-font);
@@ -37,6 +54,8 @@ header h1 {
 header p {
     margin-bottom: 0;
 }
+
+/* *********************Home/Index********************* */
 
 main {
     max-width: 1000px;

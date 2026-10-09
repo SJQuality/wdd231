@@ -1,4 +1,4 @@
-
+//Build Nav
 const nav = document.querySelector('.nav');
 
 function displayNav() {
@@ -15,27 +15,22 @@ function displayNav() {
     let a3 = document.createElement('a');
 
 
-    img.setAttribute('src', 'images/eagle.svg');
-    img.setAttribute('alt', 'Eagle Logo');
-    img.setAttribute('height', '40');
-    img.setAttribute('width', '40');
-    span.setAttribute('id', 'name');
-    span.textContent = `Stephen Jones`;
+    img.setAttribute('src', 'images/ngoag.webp');
+    img.setAttribute('alt', 'Logo for North Georgia Outdoor Adventure Guide');
+    span.setAttribute('id', 'head-name');
+    span.textContent = `North Georgia Outdoor Adventure Guide`;
     button.setAttribute('id', 'ham-btn');
     button.setAttribute('class', 'hamburger');
     button.setAttribute('aria-label', 'Menu Button');
     navNav.setAttribute('id', 'nav-bar');
     navNav.setAttribute('class', 'navigation');
-
+    li2.setAttribute('id', 'nav-border');
     a1.setAttribute('href', 'index.html');
-    a1.setAttribute('target', '_blank');
     a1.textContent = `Home`;
-    a2.setAttribute('href', 'chamber/index.html');
-    a2.setAttribute('target', '_blank');
-    a2.textContent = `Chamber`;
-    a3.setAttribute('href', 'final/index.html');
-    a3.setAttribute('target', '_blank');
-    a3.textContent = `Final`;
+    a2.setAttribute('href', 'activities.html');
+    a2.textContent = `Activities`;
+    a3.setAttribute('href', 'contactus.html');
+    a3.textContent = `Contact Us`;
 
     nav.appendChild(img);
     nav.appendChild(span);
@@ -63,7 +58,6 @@ function displayNav() {
 
 }
 displayNav();
-
 //Menu button
 const navbutton = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
@@ -72,3 +66,4 @@ navbutton.addEventListener('click', () => {
     navbutton.classList.toggle('show');
     navBar.classList.toggle('show');
 })
+
