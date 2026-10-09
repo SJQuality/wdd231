@@ -108,6 +108,10 @@
         grid-template-rows: none;
     }
 
+    .video {
+        grid-column: span 3;
+    }
+
     .lastVisited {
         grid-column: span 3;
     }

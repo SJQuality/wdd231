@@ -485,14 +485,18 @@ footer {
 
 .footerContainer {
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 3fr 2fr 3fr;
+}
+
+.video {
+    background-color: var(--mountain-blue);
+    color: var(--trail-cream);
+    align-self: center;
 }
 
 .lastVisited {
-    height: 3rem;
     color: var(--trail-cream);
     background-color: var(--forest-green);
-    padding-top: 13px;
 
 }
 
@@ -515,7 +519,7 @@ footer {
     justify-content: space-evenly;
     column-gap: 8px;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 
 }
 
