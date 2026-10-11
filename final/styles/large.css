@@ -61,6 +61,13 @@
 
     /* *********************Activities/ Home Cards********************* */
 
+    #hero {
+        font-size: 1.5em;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     #activityCards,
     #activities {
         display: grid;
